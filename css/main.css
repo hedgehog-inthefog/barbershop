@@ -1,0 +1,10 @@
+body {
+    background-color: #242424;
+    background-image: url("../img/bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.wraper {
+    height: 3000px;
+}
