@@ -35,7 +35,7 @@
 </header>
 <main class="centerer">
     <div class="logo">
-        <img src="img/logo.png" width="368" height="204" alt="Барбершоп Бородинский">
+        <img src="img/logo.png" alt="Барбершоп Бородинский" width="368" height="204">
     </div>
     <section class="advantages">
         <div class="advantages-item">
@@ -81,9 +81,11 @@
         </section>
         <section class="galery">
             <h2 class="content-title">Фотогалерея</h2>
-            <img src="#" width="100px" height="100px" alt="">
-            <button class="galery-prev">Назад</button>
-            <button class="galery-next">Вперед</button>
+            <figure class="galery-content">
+                <img src="#" width="100" height="100" alt="Интерер Барбершоп">
+            </figure>
+            <button class="btn galery-prev">Назад</button>
+            <button class="btn galery-next">Вперед</button>
         </section>
     </div>
     <div class="content">
@@ -99,21 +101,43 @@
                 Пн-Пт: с 10:00 до 22:00<br>
                 Сб-Вс: с 10:00 до 19:00
             </p>
-            <a href="#">Как проехать</a>
-            <a href="#">Обратная связь</a>
+            <a class="btn" href="#">Как проехать</a>
+            <a class="btn" href="#">Обратная связь</a>
         </section>
         <section class="reservation">
             <h2 class="content-title">Записаться</h2>
             <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-            <form>
-                <input type="date">
-                <input type="time">
-                <input type="text">
-                <input type="tel">
-                <button type="submit">Отправить</button>
+            <form class="reservation-form" action="" method="post">
+                <input type="date" name="date" value="" placeholder="Дата">
+                <input type="time" name="time" value="" placeholder="Время">
+                <input type="text" name="name" value="" placeholder="Ваше имя">
+                <input type="tel" name="phone" value="" placeholder="Телефон">
+                <button class="btn" type="submit">Отправить</button>
             </form>
         </section>
     </div>
 </main>
+<footer class="main-footer">
+    <div class="centerer">
+        <address>
+            <p>
+                Барбершоп "Бородинский"<br>
+                Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
+                <a href="#">Как нас найти?</a><br>
+                Телефон: +7 (495) 666-02-66
+            </p>
+        </address>
+        <div class="social">
+            <p>Давайте дружить!</p>
+            <a class="social-vk" href="#">Вконтакте</a>
+            <a class="social-fb" href="#">Фейсбук</a>
+            <a class="social-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="copyright">
+            <p>Разработано:</p>
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
