@@ -1,5 +1,7 @@
 body {
+    min-width: 960px;
     font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
     color: #fff;
     background-color: #000000;
     background-image: url("../img/bg.jpg");
@@ -7,6 +9,111 @@ body {
     background-repeat: no-repeat;
 }
 
-.wraper {
-    height: 3000px;
+/*body {*/
+    /*!*background: #ffff00 url("../img/barbershop-index.jpg") no-repeat center top;*!*/
+    /*min-height: 1762px;*/
+/*}*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 60px;
+    background-color: #000000;
+}
+
+.centerer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-nav {
+    float: left;
+    width: 780px;
+}
+
+.main-nav ul {
+    padding-left: 0;
+    margin: 27px 0;
+}
+
+.main-nav li {
+    margin-right: 42px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.user_block {
+    float: right;
+    width: 140px;
+}
+
+.logo {
+    width: 368px;
+    height: 204px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+.advantages {
+    margin-bottom: 80px;
+}
+
+.advantages-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.advantages-item:last-child {
+    margin-right: 0;
+}
+
+.content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+}
+
+.news,
+.contact-info {
+    float: left;
+    width: 380px;
+}
+
+.galery,
+.reservation {
+    float: right;
+    width: 300px;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.social {
+    float: left;
+    width: 180px;
+}
+
+.copyright {
+    float: right;
+    width: 180px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
